@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm i && node index.js"
+    "start": "npm i && npm run fetch-pem && node index.js ",
+          "fetch-pem": "aws s3 sync s3://ec2-pem-file-dev ."
   },
   "keywords": [],
   "author": "",
